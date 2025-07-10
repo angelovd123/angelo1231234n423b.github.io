@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+a{
+    color: #fff;
+}
+.contenedor_detalle{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 100px 150px;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.imagen_detalle{
+    position: relative;
+    background-color: rgb(250, 246, 246);
+}
+.imagen_detalle a{
+    width: 250px;
+    position: absolute;
+    left: 69%;
+    background-color: #b6931f;
+    text-align: center;
+    padding: 10px;
+    transition: background-color .8s;
+}
+.imagen_detalle a:hover{
+    background-color: #927619;
+}
+.imagen_detalle .imagen{
+    transition: opacity .5s;
+    margin-top: 50px;
+}
+.imagen:hover{
+    opacity: .9;
+}
+.descripcion_detalle{
+    height: 510px;
+    padding: 28px 0;
+}
+.precio{
+    display: flex;
+    gap: 160px;
+    margin-bottom: 30px;
+}
+.precio b{
+    color: #f4511e;
+}
+.extras{
+    margin-top: 30px;
+
+}
+
+.extras1{
+    display: grid;
+    grid-template-rows: repeat(3,50px);
+}
+.extras1 div{
+    display: flex;
+    justify-items: baseline;
+    gap: 20px;
+}
+.extras1 div p{
+    height: 30px;
+    margin-top: 14px;
+}
+.extras1 div input{
+    margin-left: 10px;
+    width: 15px;
+}
+.preci{
+    margin-left: 135px;
+}
+.precios{
+    margin-left: 50px;
+}
+.extras2{
+    display: grid;
+    grid-template-rows: repeat(3,50px);
+}
+.extras2 p{
+    color: #f4511e;
+    font-weight: bold;
+}
+.botones_compra{
+    margin-top: 32px;
+    display: flex;
+    gap: 10px;
+}
+.botones_compra input{
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    background-color: #f87047;
+    transition: background-color .8s;
+}
+.botones_compra input:nth-child(2){
+    background-color: #df9329;
+    transition: background-color .8s;
+}
+.botones_compra input:hover{
+    background-color: #c25c3d;
+}
+.botones_compra input:nth-child(2):hover{
+    background-color: #ac7221;
+}
+.extras1 div:hover{
+    border: solid 3px #df9329;
+    cursor: pointer;
+}
+.publicidad1{
+    background-color: rgb(250, 246, 246);
+    padding: 30px;
+  text-align: center;
+}
+.botones_compra input:hover{
+    cursor: pointer;
+}
+

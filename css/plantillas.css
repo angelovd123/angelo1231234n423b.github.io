@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.menu{
+    display: none;
+}
+nav ul li a{
+
+    color: #000;
+}
+.header-texto{
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    margin: auto;
+    padding: 50px;
+    border-bottom: solid 1px #999;
+}
+.header-texto h2{
+    text-align: center;
+}
+.header-texto p{
+    text-align: justify;
+}
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 50px 0;
+    padding: 0 10%;
+}
+aside{
+    display: grid;
+    grid-template-rows: 8% 80%;
+    gap: 7%;
+}
+aside h2{
+    box-shadow: 5px 5px 10px #ccc;  
+    width: 90%;
+    color: #555;
+    position: relative;
+    text-align: center;
+    padding: 10%;
+    top: 50px;
+    left: 0;
+    background-color: #eee
+}
+.contenedor-categoria{
+    box-shadow: 5px 5px 10px #ccc;  
+    width: 90%;
+    height: auto;
+    background-color: #eee
+}
+aside p{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    border-bottom: solid 1px #997c1b;
+    box-shadow: 0px 1px 3px #997c1b; 
+    transition: color .3s;
+}
+
+aside p:hover{
+    color: #D1AF3B;
+}
+aside p i{
+    width: 15px;
+    font-size: 13px;
+}
+
+
+article{
+    width: 70%;
+    height: auto;
+    margin: 0 5%;
+}
+.galeria2{
+    display: none;
+}
+.galeria-items{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 5%;
+    border-bottom: solid 1px #999;
+
+}
+.galeria-items div{
+    border-radius: 5px;
+    margin-left: 1%;
+    width: 48%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    background-color: #eee;
+}
+.ocultar{
+    display: none;
+}
+.galeria-items div div{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    margin-left: 10%;
+}
+.galeria-items div div a{
+    color: #fff;
+    background-color: #555;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding-top: 15px;
+    text-align: center;
+    transition: background 1s;
+  }
+  .galeria-items div div a:nth-child(2){
+  margin-left: 10px;
+
+
+}
+.galeria-items div div a:hover {
+   background: linear-gradient(to bottom right, #caa427, #5f4c0f); 
+}
+.galeria-items a{
+    width: 50%;
+    height: 100%;
+}
+.galeria-items a i{
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    margin: -16% 20%;
+    color: #caa427;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.galeria-items a i b{
+    display: block;
+    font-size: 25px;
+}
+.galeria-items a:hover > i{
+    opacity: 1;
+ }
+
+.galeria-items a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: opacity .6s;
+}
+.galeria-items a img:hover{
+    opacity: .5;
+ }
+.galeria-items div h3{
+    color: #333;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    height: 60%;
+  
+  }
+  .etiqueta{
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      left: 0;
+      background-color: #997c1b;
+  }
+  .etiqueta b{
+    color: #fff;
+    position: relative;
+    top: 20%;
+    left: 10%;
+  }
+  @media (max-width: 600px) {
+    .header-texto{
+        width: 100%;
+        gap: 0;
+        margin: auto;
+        padding: 30px;
+    }
+    section{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0 5%;
+    }
+    aside{
+        display: block;
+    }
+    aside h2{
+        width: 100%;
+        padding: 5%;
+        left: 0;
+    }
+    .contenedor-categoria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 0 50;
+        width: 100%;
+        margin-top: 70px;
+    }
+    aside p{
+        width: auto;
+        font-size: 15px;
+        margin-top: 0;
+        border-right: solid 1px #999;
+    }
+    aside p i{
+        width: auto;
+        font-size: 10px;
+    }
+    article{
+        width: 100%;
+        margin: 0 0;
+    }
+    .galeria-items{
+        width: 100%;
+        height: auto;
+        display: block
+    }
+    .galeria-items div{
+        margin-top: 5%;
+        width: 100%;
+        height: 150px;
+    }
+    .galeria-items div div{
+        display: flex;
+        margin-top: 0px;
+    }
+  }
+  @media (max-width: 800px) {
+    .header-texto{
+        margin-bottom: -50px;
+    }
+    section{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0 5%;
+    }
+    aside{
+        display: block;
+    }
+    aside h2{
+        width: 100%;
+        padding: 5%;
+        left: 0;
+    }
+    .contenedor-categoria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 0 50;
+        width: 100%;
+        margin-top: 70px;
+    }
+    aside p{
+        width: auto;
+        font-size: 15px;
+        margin-top: 0;
+        border-right: solid 1px #999;
+    }
+    aside p i{
+        width: auto;
+        font-size: 10px;
+    }
+    article{
+        width: 100%;
+        margin: 0 0;
+    }
+    .galeria-items{
+        width: 100%;
+        height: auto;
+        display: block
+    }
+    .galeria-items div{
+        margin-top: 5%;
+        width: 100%;
+        height: 150px;
+    }
+    .galeria-items div div{
+        display: flex;
+        margin-top: 0px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    section{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0 5%;
+    }
+    aside{
+        display: block;
+    }
+    aside h2{
+        width: 100%;
+        padding: 5%;
+        left: 0;
+    }
+    .contenedor-categoria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 0 50;
+        width: 100%;
+        margin-top: 70px;
+    }
+    aside p{
+        width: auto;
+        font-size: 15px;
+        margin-top: 0;
+        border-right: solid 1px #999;
+    }
+    aside p i{
+        width: auto;
+        font-size: 10px;
+    }
+    article{
+        width: 100%;
+        margin: 0 0;
+    }
+    .galeria-items{
+        width: 100%;
+        height: auto;
+        display: block
+    }
+    .galeria-items div{
+        margin-top: 5%;
+        width: 100%;
+        height: 150px;
+    }
+    .galeria-items div div{
+        display: flex;
+        margin-top: 0px;
+    }
+  }

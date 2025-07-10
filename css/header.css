@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*....................main...........*/
+main{
+    width: 100%;
+    position: relative;
+}
+/*....................RESEÑA...........*/
+.reseña{
+    display: flex;
+    width: 100%;
+    height: 510px;
+    justify-content: center;
+}
+.reseña div{
+    width: 400px;
+    height: 100px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.reseña div img{
+  margin-left: 120px;
+  margin-bottom: 20px;
+}
+
+/*....................CARRUZEL...........*/
+.contenedor-carrusel{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+.contenedor-carrusel h2{
+    position: absolute;
+    color: #fff;
+    top: 40px;
+    left: 35%;
+}
+
+.contenedor-selector{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    top: 45%;
+    left: 22%;
+}
+.contenedor-selector div{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: 5px;
+    opacity: .1;
+}
+.contenedor-selector div:first-child{
+    opacity: 1; 
+    animation: opacidad 10s infinite ease-in-out;
+    animation-delay: 3s;
+    
+}
+.contenedor-selector div:nth-child(2){  
+    animation: opacidad2 10s infinite ease-in-out;
+    animation-delay: 3s;
+}
+
+.carrusel{
+    position: absolute;
+    width: 800px;
+    height: 350px;
+    margin: 50px auto 0;
+    margin-bottom: 50px;
+    overflow: hidden;
+    top: 550px;
+    left: 400px;
+    background-color: #000;
+}
+.imagen{
+    display: flex;
+    width: 50%;
+    padding: 0;
+    width: 200%;
+}
+.imagen li{
+    list-style: none;
+    width: 100%;
+}
+.imagen li{
+    text-decoration: none;
+}
+.imagen li img{
+    width: 100%;
+    animation: deslizar 10s infinite  ease-in-out;
+    animation-delay: 3s;
+}
+
+@keyframes deslizar {
+    0%{margin-left: 0%;}
+    100%{margin-left: -100%;}
+
+}
+@keyframes opacidad {
+    50%{
+        opacity: 1;   
+    }
+
+   100%{
+      opacity: .1; 
+   }
+    
+
+}
+@keyframes opacidad2 {
+    
+    50%{
+        opacity: .1;   
+    }
+
+    100%{
+        opacity: 1; 
+     }
+
+}
+/*....................servicios............*/
+.contenedor-servicios{
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.contenedor-servicios div{
+    position: relative;
+    width: 25%;
+    height: 400px;
+    background-color: #000;
+    top: 50px;
+    left: 100px;
+    margin-left: 50px;
+    opacity: .8;
+
+}
+.contenedor-servicios h2{
+    position: relative;
+    top: 10px;
+    left: 80px;
+
+}
+
+.contenedor-servicios div img{
+    position: relative;
+    color: #fff;
+    top: 20px;
+}
+.plantilla{
+left: 100px;
+}
+.administracion{
+    left: 50px;
+}
+.personalizacion{
+ left: 100px;
+}
+.contenedor-servicios div div{
+    position: relative;
+    width: 360px;
+    height: 100px;
+    background-color: #000;
+    top: 50px;
+    left: -30px;
+    margin-left: 50px;
+
+}
+.divisor-servicios{
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+}
+.divisor-servicios div{
+    text-align: center;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    background-color: #fff;
+    top: -2px;
+    left: 50%;
+    border-radius: 5px;
+    opacity: .8;
+}
+/*....................cotizar............*/
+.cotizar{
+    width: 100%;
+    height: 500px;
+}
+.formulario{
+    position: relative;
+    width: 50%;
+    height: 60%;
+    background-color: #eee3;
+    border: solid 2px #000;
+    left: 400px;
+    top: 100px;
+}
+.titulo-formulario{
+    position: relative;
+     margin-left: 10%;
+    margin-top: 20px;
+    left: 40%;
+
+}
+.formulario h2{
+    position: relative;
+    color: #fa0;
+}
+.titulo-formulario p{
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    left: -35%;
+}
+.texto{
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+.label-texto{
+    margin-left: -200px;
+}
+.input-texto{
+   margin-top: -80px;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+.input-texto select{
+    margin-top: 10px;
+    width: 405px;
+}
+.texto input{
+    display: block;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.boton-cotizar{
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 30%;
+}
+.privacidad{
+    display: flex;
+    position: relative;
+    left: -110px;
+    
+}
+.privacidad a{
+    text-decoration: none;
+    color: #000;
+}
+.privacidad input{
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.privacidad p{
+    margin-left: -10px;
+
+}
+.boton-cotizar input{
+    position: relative;
+    right: 15px;
+}
+.boton-horario{
+    text-decoration: none;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: -10px;
+    background-color: #000;
+}
+
+
+
+/*....................CAMBIO DE CLASE...........*/
+.fijo{
+    position: fixed;
+    background-color: #000;
+    color: #fff;
+    transition-duration: 1s;
+}
+.fijo ul li a{
+    color: #fff;
+}
+
+@keyframes aparecer {
+    0%{
+        left: 32%;
+        opacity: 0;
+    }
+    100%{
+        left: 33%;
+        opacity: 1;
+    }
+}

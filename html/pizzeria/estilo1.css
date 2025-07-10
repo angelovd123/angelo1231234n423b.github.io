@@ -1,0 +1,717 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-color: #f8f8f8;
+}
+.fondo__panel{
+    width: 100%;
+    animation-name: desaparecer;
+    animation-duration: 2s;
+}
+.fondo__panel img{
+    background-color: #f8f8f8;
+    width: 100%;
+    object-fit: none;  
+    height: 650px; 
+}
+.fondoxd img{
+    background-color: #f8f8f8;
+    width: 100%;
+    object-fit: none;  
+    height: 650px; 
+}
+.header__container-contacto{ 
+    width: 100%;
+    height: 45px;
+    background-color: #0008;
+    z-index: 100;
+    transform:translateY(-650px)
+}
+
+.container__contacto{
+    position: relative;
+    display: flex;
+    width: 45%;
+    height: 60%;
+    transform: translateX(800px);
+    top: 10px;
+}
+
+.container__contacto a{
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.container__contacto span{
+    color: #fff;
+}
+
+.contacto{
+background-color: red;
+border-radius: 15px;
+width: 142px;
+height: 25px;
+padding: 3px 24px;
+}
+.contacto span{
+    color: #fff;
+    font-size: 11px;
+}
+
+.facebook{
+ width: 25px;
+ height: 25px;
+ background-color: #fff;
+ padding: 3px 7px;
+ border-radius: 100%;
+ transform: translateX(10px);
+}
+.facebook i{
+    color: #000;
+}
+.instagram{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    padding: 3px 7px;
+    border-radius: 100%;
+    left: 8px;
+   }
+.instagram i{
+    color: #000;
+}
+.registrarse{
+    font-size: 11px;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    width: 110px;
+    height: 25px;
+    padding: 3px 26px;   
+    transform: translateX(25px); 
+}   
+.iniciar-sesion{
+    font-size: 11px;
+    background-color: red;
+    border-radius: 15px;
+    width: 111px;
+    height: 25px;
+    padding: 5px 20px; 
+    transform: translateX(40px); 
+}
+.bolsa{
+    transform: translateX(50px);
+}
+.span1{
+    transform: translateX(40px); 
+}
+.span2{
+    transform: translateX(50px); 
+}
+.span3{
+    position: relative;
+    font-size: 12px; 
+    right: 21px;
+    bottom: 3px;
+}
+
+/*--------------------------------------------NAVEGADOR------------------------------------------*/
+
+nav{
+    
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #6c080099;
+    transform: translateY(-650px);
+    z-index: 3;
+}
+nav div{
+    display: inline-block;
+}
+.nav__logo{
+    position: relative;
+    transform: translateX(215px);
+    bottom: 48px;
+}
+.logo-pizza{
+  position: relative;
+  content: url(https://www.pizzamostra.com/chimbote/wp-content/themes/tema_pizzamostra/img/pizza-menu.png);
+  transform: translateY(15px);
+  left: 10px;
+}
+.nav__contenedor{
+    position: relative;
+    transform: translateX(400px);
+    bottom: 5px;
+}
+.nav__contenedor a{
+    margin-left: 19px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.nav__contenedor span{
+    color: #fff;
+    font-size: 10px;
+    margin-left: 20px;
+}
+/*--------------------------------------------PANEL------------------------------------------*/
+
+.header__container-panel{
+    animation-name: aparecer;
+    animation-duration: .3s;
+    opacity: 1;
+    width: 60%;
+    transform: translateY(-625px);
+    margin-left: 300px;
+}
+.imagen-panel{
+    animation-name: izquierda;
+    animation-duration: 1s;
+    position: relative;
+    display: inline-block;
+    transform: translateY(-280px);
+    left: 420px;
+    width: 543px;
+    height: 543px;
+}
+.header__container-panel h3{
+    color: #fff;
+}
+.header__container-panel h4{
+    color: #ffb500;
+}
+.header__container-panel h6{
+    color: #fff;
+}
+.xd h3{
+    color: #fff;
+}
+.xd h4{
+    color: #ffb500;
+}
+.xd h6{
+    color: #fff;
+}
+
+.ubicacion{
+    width: 210px;
+    height: 65px;
+    background-color: #d10c16;
+    transform: translateY(130px);
+    margin-left: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.ubicacion img{
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.ubicacion p{
+    position: relative;
+    margin-left: 65px;
+    color: #fff;
+    top: -39px;
+    font-weight: bold;
+}
+.titulos{
+    animation-name: arriba;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 5px;
+    font-size: 48px;
+    transform: translateY(100px);
+    margin-left: 60px
+}
+.boton{
+    opacity: 1 !important;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    transform: translateX(60px);
+    margin-left: 15px;
+}
+.boton span{
+    display: inline-block;
+    background-color: #d10c16;
+    border-radius: 100%;
+    width: 98%;
+    height: 98%;
+    margin-top: 0.6px;
+    margin-left: 0.3px;
+}
+.ubicacion div:nth-child(2){
+    border: solid 3px #fff;
+}
+.bonton-extra{
+ margin-top: -330px;
+ margin-left: 460px;
+}
+.bonton-extra p{
+    font-size: 10px;
+    margin-top: -75px;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: #fff;
+    animation-name: desplazarse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+/*--------------------------------------------SECCION------------------------------------------*/
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    background-image: url("https://www.pizzamostra.com/chimbote/wp-content/themes/tema_pizzamostra/img/bg-home.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 1420px;
+    top: -3px;
+}
+.seccion__container{
+    position: relative;
+    display: block;
+    width: 69%;
+    height: 100%;
+    margin-top: -600px;
+    margin-left: 240px;
+}
+.seccion__container article{
+    width: 100%;
+    display: block;
+}
+article:first-child{
+    height: 19%;
+    display: flex;
+    margin-top: 50px;
+}
+article:nth-child(2){
+    height: 77%;
+   display: flex;
+}
+article:nth-child(2) a{
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+article:first-child a{
+    position: relative;
+    transition-property: margin-top;
+    transition-duration: 1s;
+}
+.imagen1{
+   width: 38%; 
+   height: 60.4%;
+}
+.imagen2{
+    width: 62%; 
+    height: 30%;
+    position: relative;
+    left: -26px;
+}
+.imagen3{
+    object-position: cover;
+    position: relative;
+    width: 62%; 
+    height: 30%;
+    left: -665px;
+    top: 335px
+}
+.imagen4{
+    object-position: cover;
+    position: relative;
+    width: 700px;
+    height: 39%;
+    left: -1765px;
+    top: 710px
+}
+.imagen5{
+    object-position: cover;
+    position: relative;
+    width: 379px;
+    height: 39%;
+    left: -1800px;
+    top: 710px
+    
+}
+article:nth-child(2) div img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-position: cover; 
+  }
+article a:first-child{
+    margin-left: -30px;
+}
+article a:nth-child(2){
+    margin-right: -30px;
+}
+article a:nth-child(3){
+    margin-right: 0px;
+}
+
+article a{
+    margin-top: 30px;
+    margin-right: 40px;
+    transform: translateX(40px);
+    text-decoration: none;
+    color: #646464;
+    font-weight: bold;
+    font-size: 12px;
+}
+article a h2{
+    font-size: 22px;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.pizza{
+    margin-left: 33px;
+}
+.pasta{
+    margin-left: 53px;
+}
+.bebida{
+    margin-left: -10px;
+}
+
+/*--------------------------------------------FOOTER-----------------------------------------*/
+footer{
+    display: block;
+    background-image: url(https://www.pizzamostra.com/chimbote/wp-content/themes/tema_pizzamostra/img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    width: 100%;
+    top: 50px;
+    height: 560px;
+}
+footer h2{
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    font-size: 43px;
+    color: #7e7e7e;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+footer h2 strong{
+    color: #a71f15;
+}
+.informacion-footer{
+    position: relative;
+    display: flex;
+    height: 400px;
+    top: 180px;
+}
+.informacion-footer div{
+    position: relative;
+    color: #fff;
+    top: 130px;
+}
+.informacion-footer div h6{
+    color: #ffba00;
+    font-size: 20px;
+}
+.container-contactanos{
+    height: 210px;
+    margin-left: -100px;
+}
+.container-contactanos div{
+position: relative;
+top: 1px;
+margin-top: 15px;
+}
+.container-contactanos div:nth-child(4) p{
+    display: flex;
+    position: relative;
+    left: 40px;
+    top: -25px;
+    line-height: 22px;
+}
+.container-atencion{
+    height: 200px;
+    margin-left: 70px;
+}
+.container-atencion a{
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.container-navegacion{
+    height: 200px;
+    margin-left: 70px;
+}
+.container-navegacion a{
+   display: block;
+   margin-top: 15px;
+   color: #fff;
+   text-decoration: none;
+}
+.container-navegacion img{
+    margin-left: 20px;
+}
+.redes h4{
+    position: relative;
+    display: block;
+    font-size: 20px;
+    left: 70px;
+    color: #ffba00;
+}
+.redes a{
+    position: relative;
+    top: 40px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+    left: -50px;
+}
+.redes a i{
+    margin-top: 8px;
+}
+
+.redes{
+    display: flex;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.logo-footer{
+    height: 210px;
+    margin-top: -140px;
+    margin-left: -190px;
+}
+.container-cuentas{
+    height: 55px;
+    position: relative;
+    margin-top: -70px;
+    left: 650px;
+}
+.container-cuentas img{
+    margin-right: 15px;
+}
+
+.container-autor{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 43px;
+    background-color: rgb(71 7 0);
+    margin-top: 160px;
+}
+.autor{
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    color: #dbc3be;
+}
+.autor div{
+    font-size: 12px;
+}
+.autor div:first-child{
+    margin-left: 200px;
+}
+.autor div:nth-child(2){
+    margin-left: 700px;
+}
+.autor div a{
+    color: #fff;
+    text-decoration: none;
+}
+.wsp{
+   position: absolute;
+   z-index: 100;
+   display: inline-block;
+   width: 60px;
+   border-radius: 100%;
+   margin-top: 100px;
+   margin-left: 1490px;
+   background-color: #25d366;
+   padding: 12px;
+}
+/*--------------------------------------------EVENTOS HOVER-----------------------------------------*/
+.facebook:hover{
+   background-color: #000;
+   border: solid 1px #fff;
+   transition-duration: .3s;
+}
+.facebook:hover>i{
+  margin-left: -1px;
+  color: #fff;
+}
+.instagram:hover{
+    transition-duration: .3s;
+    background-color: #000;
+    border: solid 1px #fff
+   
+}    
+.instagram:hover>i{
+   margin-left: -2px;
+   color: #fff;
+ }
+ .boton:hover{
+     border: solid 3px #fff;
+ }
+
+article:first-child a:hover{
+    margin-top: 20px
+ }
+ article:nth-child(2) a:hover{
+    opacity: .8;
+}
+ .redes a:hover{
+    color: #100; 
+    background-color: #fff;
+ }
+ /*--------------------------------------------ANIMACIONES-----------------------------------------*/
+
+ @keyframes desplazarse{
+     0%{
+         top: 0px;
+
+     }
+
+     100%{
+         top: 50px;
+         opacity: 0;
+     }
+ }
+ @keyframes aparecer{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+ }
+ @keyframes aparecer2{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+    }
+ }
+ @keyframes arriba{
+    0%{
+        top: 5px;
+
+    }
+
+    100%{
+        top: -20px;
+    }
+ }
+ @keyframes arriba2{
+    0%{
+        top: 5px;
+
+    }
+
+    100%{
+        top: -20px;
+    }
+ }
+ @keyframes izquierda{
+    0%{
+        left: 435px;
+
+    }
+
+    100%{
+        lef: -15px;
+    }
+ }
+ @keyframes izquierda2{
+    0%{
+        left: 435px;
+
+    }
+
+    100%{
+        lef: -15px;
+    }
+ }
+ @keyframes desaparecer{
+    5%{
+        opacity: 0.7;
+
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+ }
+ @keyframes desaparecer2{
+    5%{
+        opacity: 0.7;
+
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+ }
+
+  /*--------------------------------------------CLASE PARA JS-----------------------------------------*/
+.xd{
+    animation-name: aparecer2;
+    animation-duration: 1s;
+    width: 60%;
+    transform: translateY(-625px);
+    margin-left: 300px; 
+}
+
+.tituloxd{
+    animation-name: arriba2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 5px;
+    font-size: 48px;
+    transform: translateY(100px);
+    margin-left: 60px
+}
+.panxd{
+    animation-name: izquierda2;
+    animation-duration: 1s;
+    position: relative;
+    display: inline-block;
+    transform: translateY(-280px);
+    left: 420px;
+    width: 543px;
+    height: 543px;
+}
+.fondoxd{
+    width: 100%;
+    animation-name: desaparecer2;
+    animation-duration: 2s;
+}

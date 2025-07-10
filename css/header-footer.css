@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.menu{
+    display: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+}
+.header2{
+    background-color: #131111;
+}
+.header2 h2{
+  margin-left: 10%;
+  margin-top: 5%;
+  color: #fff;
+}
+/*....................HEADER-PLANTILLA...........*/
+header{
+    position: relative;
+    width: 100%;
+    height: 780px;
+    background-color: #000;
+}
+/*...............................................*/
+nav{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    z-index: 10;
+    background-color: #fff;
+}
+.nave{
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+}
+nav ul{
+    width: 50%;
+    max-width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: auto;
+}
+nav ul li{
+    font-size: 17px;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color: #D1AF3B;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: color .3s;
+}
+nav ul li a{
+
+    color: #000;
+}
+.items-lista{
+    color: #fff;
+}
+.logo{
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo h1{
+    width: 45%;
+    font-size: 18px;
+    color: #a88d32;
+    font-family: 'Frijole', cursive;
+}
+.descripcion{
+    width: 55%;
+    font-family: 'Frijole', cursive;
+    font-size: 11px;
+}
+/*....................PANEL...........*/
+.panel{
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+}
+.panel img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-position: cover;  
+    opacity: .4;
+}
+.panel-oferta{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 30%;  
+}
+.titulo-promo{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+.boton-promo{
+    font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #211B05;
+  position: absolute;
+  padding: 15px 10px;
+  left: 45%;
+  top: 50%;
+  background-color: #D1AF3B;
+  box-shadow: 6px 5px 20px #443508; 
+  border-radius: 10px;
+ 
+}
+.boton-promo:hover{
+   background-color: #211B05;
+   color: #fff;
+   transition-duration: 1s;
+     
+}
+/*....................FOOTER...........*/
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    column-gap: 5%;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+footer a:hover{
+    color: #D1AF3B;
+}
+.footer-logo{ 
+  font-size: 18px;
+}
+.footer-logo h1{
+    color: #a88d32;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Frijole', cursive;
+}
+.footer-logo p{
+    font-family: 'Frijole', cursive;
+}
+.footer-redes a{
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 5px;
+    margin-top: 30px;
+}
+.subtitulo{
+    font-size: 20px;
+}
+.footer-copyr{
+    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20%;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  border-top: solid 1px #fff;
+  align-items: center;
+}
+.footer-copyr div{
+    margin-top: 3%;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+    nav ul{
+        width: 70%;
+        padding: 0 10px;
+    }
+    
+    .logo h1{
+        font-size: 15px;
+    }
+    .descripcion{
+        width: 55%;
+        font-size: 8px;
+    }
+    /*....................FOOTER...........*/
+footer{
+    column-gap: 5%;
+}
+.footer-logo{ 
+  font-size: 11px;
+}
+.footer-logo h1{
+    font-size: 25px;
+}
+
+.footer-redes a{
+    margin: 10px 3px;
+}
+.ruc{
+    margin-left: 10px;
+}
+.footer-copyr{
+   padding: 10px 0;
+}
+  }
